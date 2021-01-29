@@ -1,10 +1,15 @@
 import React from 'react'
+import Hello from './Hello'
+import Header from './Header'
+import Footer from './Footer'
 
-function App() {
+const App = () => {
   return (
-    <div>
-     <h2> Hello world </h2>
-    </div>
+    <>
+    <Header/>
+    <Hello/>
+    <Footer/>
+    </>
   )
 }
 

@@ -4,20 +4,21 @@ describe("User can navigate the app", () => {
         cy.visit("http://localhost:3000");
     });
 
-describe("to About tab and it", () => {
+    describe("to About tab and it", () => {
     beforeEach(() => {
         cy.get("#about-tab").click();
     });
     
     it("displays About Me header", () => {
         cy.get("#about-header").should("contain", "About Me");
+    
         
         it("displays component name in url", () => {
             cy.url().should("contain", "about");
         });
 
         it("does not Display My Projects header ", () => {
-            cy.get("projects-header").should("not.exist");
+            cy.get("#projects-header").should("not.exist");
         });
 
         it("does not display Hello World", () => {
@@ -31,7 +32,7 @@ describe("to About tab and it", () => {
         });
 
         it("displays My Projects header", () => {
-            cy.get("projects-header").should("contain", "My Projects");
+            cy.get("#projects-header").should("contain", "My Projects");
         });
 
         it("displays component name in url", () => {

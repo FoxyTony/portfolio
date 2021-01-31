@@ -1,7 +1,7 @@
 
 describe("User can navigate the app", () => {
     beforeEach(() => {
-        cy.visit("http:localhost:3000");
+        cy.visit("http://localhost:3000");
     });
 
 describe("to About tab and it", () => {

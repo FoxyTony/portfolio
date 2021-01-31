@@ -8,7 +8,7 @@ describe("User can see list of projects", () => {
         cy.get("#project-1").within(() => {
             cy.get(".image").should("exist");
             cy.get(".header").should("contain", "My first Website");
-            cy.get(".description").should("contain", "This was my first project.");
+            cy.get(".description").should("contain", "Let this website shine upon you!");
         });
     });
 
@@ -18,7 +18,7 @@ describe("User can see list of projects", () => {
             cy.get(".header").should("contain", "FizzBuzz");
             cy.get(".description").should(
                 "contain",
-                "Making ruby backend application is fun."
+                "Everyone can code?"
             );
         });
     });
